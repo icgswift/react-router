@@ -8,28 +8,28 @@
 
 import React from 'react'
 
-const details =[ {id:1,title:'first',content:'我爱你，火锅'},
-                 {id:2,title:'two',content:'我爱你，串串'},
-                 {id:3,title:'three',content:'我爱你，解放碑'} ]
+const details = [{ id: 1, title: 'first', content: '我爱你，火锅' },
+{ id: 2, title: 'two', content: '我爱你，串串' },
+{ id: 3, title: 'three', content: '我爱你，解放碑' }]
 
-export default function NewsDetails (props){
+export default function NewsDetails(props) {
     /* 
        工厂函数和类传递props的区别：
               工厂函数：接受props参数，直接调用
                    类 ：this.props调用，无需接受参数    
     */
-    const {id}=props.match.params
-    const de=details.find(
-        (detail,index)=>
-            detail.id===id*1
-        
+    const { id } = props.match.params
+    const de = details.find(
+        (detail, index) =>
+            detail.id === id * 1
+
     )
     // console.log(de)
-    return(
+    return (
         <div>
-        <li>{de.id}</li>
-        <li>{de.title}</li>
-        <li>{de.content}</li>
+            <li>{de.id}</li>
+            <li>{de.title}</li>
+            <li>{de.content}</li>
         </div>
-)
+    )
 } 
