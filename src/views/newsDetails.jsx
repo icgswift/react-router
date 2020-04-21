@@ -8,9 +8,9 @@
 
 import React from 'react'
 
-const details =[ {id:1,title:'first',content:'我爱你，中国'},
-                 {id:2,title:'two',content:'我爱你，父母'},
-                 {id:3,title:'three',content:'我爱你，孩子'} ]
+const details =[ {id:1,title:'first',content:'我爱你，火锅'},
+                 {id:2,title:'two',content:'我爱你，串串'},
+                 {id:3,title:'three',content:'我爱你，解放碑'} ]
 
 export default function NewsDetails (props){
     /* 
